@@ -15,7 +15,7 @@
 
 ## Note about shellcheck SC2086
 ## "Double-quote arguments to prevent globbing and word-splitting"
-## https://github.com/koalaman/shellcheck/wiki/SC2086
+## git@github.com:koalaman/shellcheck/wiki/SC2086
 ## In few cases the $XXX_PARAMS argument is NOT double-quoted
 ## on purpose: it might be empty, and it might have several
 ## distinct arguments to be passed to other scripts (e.g. "-i -t -D").
@@ -113,7 +113,7 @@ cmake_custom_params=
 case "$1" in
   googlelog)
     NAME=glog
-    REPO=https://github.com/google/glog
+    REPO=git@github.com:google/glog.git
     REPODIR=cachelib/external/$NAME
     SRCDIR=$REPODIR
     external_git_clone=yes
@@ -123,7 +123,7 @@ case "$1" in
 
   googleflags)
     NAME=gflags
-    REPO=https://github.com/gflags/gflags
+    REPO=git@github.com:gflags/gflags.git
     REPODIR=cachelib/external/$NAME
     SRCDIR=$REPODIR
     external_git_clone=yes
@@ -138,7 +138,7 @@ case "$1" in
 
   googletest)
     NAME=googletest
-    REPO=https://github.com/google/googletest.git
+    REPO=git@github.com:google/googletest.git
     REPODIR=cachelib/external/$NAME
     SRCDIR=$REPODIR
     # Work-around: build googletest with DEBUG information
@@ -155,7 +155,7 @@ case "$1" in
 
   fmt)
     NAME=fmt
-    REPO=https://github.com/fmtlib/fmt.git
+    REPO=git@github.com:fmtlib/fmt.git
     REPODIR=cachelib/external/$NAME
     SRCDIR=$REPODIR
     external_git_clone=yes
@@ -169,7 +169,7 @@ case "$1" in
 
   zstd)
     NAME=zstd
-    REPO=https://github.com/facebook/zstd
+    REPO=git@github.com:facebook/zstd.git
     REPODIR=cachelib/external/$NAME
     SRCDIR=$REPODIR/build/cmake
     external_git_clone=yes
@@ -183,7 +183,7 @@ case "$1" in
 
   sparsemap)
     NAME=sparsemap
-    REPO=https://github.com/Tessil/sparse-map.git
+    REPO=git@github.com:Tessil/sparse-map.git
     REPODIR=cachelib/external/$NAME
     SRCDIR=$REPODIR
     external_git_clone=yes
